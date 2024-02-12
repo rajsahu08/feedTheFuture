@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black">
+    <section class="bg-black text-white h-[100vh] flex justify-center items-center">
+        <div class="w-[70%]">
+            <p class="text-[53px] m-3">Donate Food or Money</p>
+            <p class="text-[18px] m-3">Explore different ways to support those in need through your donations.</p>
+            <div class="m-3">
+                <a href="#donatefood"><button class="border border-gray-500 rounded-lg bg-gray-500 w-32 h-10 text-black bg-white">Donate Food</button></a>
+                <a href="#donatemoney"><button class="border border-white rounded-lg w-32 mx-3 h-10">Donate Money</button></a>
+                
+            </div>
+        </div>
+    </section>
+    <section id="donatemoney" class="h-[137vh] flex justify-center items-center">
+        <div class="w-[60%] h-full">
+            <div class="">
+                <img src="img/donate.jpg" alt="" class="h-96 w-full border-4">
+            </div>
+            <div class="bg-slate-600 text-white">
+                <p class="px-14 py-8">Food Rescue US is committed to ending hunger and reducing food waste by directly transferring fresh, usable food that would have otherwise been thrown away from grocers, restaurants, and other food industry sources to food insecure families throughout the U.S. 
+
+                    Food Rescue US works with more than 2,700+ food donors, 17,000+ food rescuers, and 2,500+ social service agencies across 40 locations in 22 states and the District of Columbia, and we are constantly growing. Since our founding, we have reduced food waste by over 133+ million pounds and provided more than 105+ million high quality meals to the increasing number of people experiencing food insecurity.
+                    
+                    
+                    To make a donation by check, please make checks payable to Food Rescue US. All checks can be mailed to the following address: Food Rescue US, 1127 High Ridge Rd., Suite 338, Stamford, CT 06905
+                    
+                    *Donations for our national efforts and individual Food Rescue US locations can be made through this page. There will be a question during the donation process for you to allocate your donation. 
+                    
+                    **For donations allocated towards Food Rescue US locations, please note that 15% of the donations will be designated towards the general operations of Food Rescue US which includes essential technology, fundraising, marketing, and business support for all locations.</p>
+            </div>
+        </div>
+        <div class="w-[40%] h-full bg-black text-white">
+            <div class="border-2 border-white rounded-lg m-11">
+            <p class="text-[38px] mx-5 my-3">Make an Impact By Donating</p>
+            <p class="mx-5 my-3">Changes lives with Monthly Donations.Donatekart's Social Investment Plan creates impact every day.Join us to make a difference.</p>
+            
+            <div class="my-4 flex flex-col">
+                <label for="name" class="mx-5">Enter Your Name</label>
+                <input id="name" type="text" class="text-black border-black border-2 rounded-lg mx-5 w-52 h-8 px-2">
+            </div>
+            <div class="my-5  flex flex-col">
+                <label for="phone" class="mx-5">Enter Your Phone No</label>
+                <input id="phone" type="text" class="text-black border-black border-2 rounded-lg mx-5 w-52 h-8 px-2">
+            </div>
+        
+            <div class="flex flex-col">
+                <label for="amt" class="mx-5">Enter The Amount</label>
+                <input id="amt" type="text" placeholder="Rs 1000" class="text-black border-black border-2 w-52 px-2 rounded-lg mx-5 h-8">
+            </div>
+            <div>
+                <button onclick="changeInputValue250()" class="hover:bg-white hover:text-black border border-white rounded-lg mx-4 w-16  my-7 h-10 font-bold text-[22px]">250</button>
+                <button  onclick="changeInputValue500()" class="hover:bg-white hover:text-black border border-white rounded-lg mx-4 w-16  my-7 h-10 font-bold text-[22px]">500</button>
+                <button onclick="changeInputValue750()" class="hover:bg-white hover:text-black border border-white rounded-lg mx-4 w-16  my-7 h-10 font-bold text-[22px]">750</button>
+                <button onclick="changeInputValue1000()" class="hover:bg-white hover:text-black border border-white rounded-lg mx-4 w-16  my-7 h-10 font-bold text-[22px]">1000</button>
+            </div>
+            <div class="flex justify-center items-center">
+                <button onclick="pay()" id="payed" class="hover:bg-white hover:text-black border border-white rounded-lg w-full mx-6 my-7 h-10 font-bold text-[22px]">Pay</button>
+            </div>
+                
+            </div>
+    </div>
+    </section>
+    <section id="donatefood" class="my-10 h-[137vh] flex justify-center items-center">
+        <div class="w-[40%] h-full bg-black text-white">
+            <div class="border-2 border-white rounded-lg m-11">
+            <p class="text-[38px] mx-5 my-3">Make an Impact By Donating</p>
+            <p class="mx-5 my-3">Changes lives with Monthly Donations.Donatekart's Social Investment Plan creates impact every day.Join us to make a difference.</p>
+            
+            <div class="my-4 flex flex-col">
+                <label for="name" class="mx-5">Enter Name</label>
+                <input id="name" type="text" class="text-black border-black border-2 rounded-lg mx-5 w-52 h-8 px-2">
+            </div>
+            <div class="my-5  flex flex-col">
+                <label for="phone" class="mx-5">Enter Phone No.</label>
+                <input id="phone" type="text" class="text-black border-black border-2 rounded-lg mx-5 w-52 h-8 px-2">
+            </div>
+            <div class="my-5  flex flex-col">
+                <label for="phone" class="mx-5">Enter Location</label>
+                <input id="phone" type="text" class="text-black border-black border-2 rounded-lg mx-5 w-52 h-8 px-2">
+            </div>
+        
+            <div class="flex flex-col">
+                <label for="amt" class="mx-5">What you want to Donate?</label>
+                <input id="amt" type="text" placeholder="Food or Goods" class="text-black border-black border-2 w-52 px-2 rounded-lg mx-5 h-8">
+            </div>
+            
+            <div class="flex justify-center items-center">
+                <button onclick="wellcontact()" id="payed" class="hover:bg-white hover:text-black border border-white rounded-lg w-full mx-6 my-7 h-10 font-bold text-[22px]">Submit</button>
+            </div>
+                
+            </div>
+    </div>
+        <div class="w-[60%] h-full">
+            <div class="">
+                <img src="img/fooddonate.jpg" alt="" class="h-96 w-full border-4">
+            </div>
+            <div class="bg-gray-800 text-white">
+                <p class="px-20 py-8">Despite the significant progress India has made, a large number of people still face the risk of food insecurity. The COVID-19 pandemic has further exacerbated the challenge of hunger in our country.
+
+                    As a response to the devastating consequences of the pandemic, Feeding India by Zomato launched the
+                    
+                    Daily Feeding Program in January 2021
+                    to provide daily meal support to the most vulnerable families.
+                    
+                    Under this program, Feeding India has served 4.3+ crore meals with the main focus on reducing hunger for the most vulnerable. This has been enabled with the support of over 140 NGO partners spread across 40 cities in the country.</p>
+            </div>
+        </div>
+       
+    </section>
+    <section class="bg-black text-white flex justify-center items-center">
+        <div class="mx-16">
+            <p class="text-[33px]  font-bold">Contact Us</p>
+            <div class="flex flex-col">
+                <input type="text" placeholder="Name" class="my-2 rounded-lg h-8 px-4 text-white">
+                <input type="text" placeholder="mail" class="my-2 rounded-lg h-8 px-4 text-white">
+                <textarea placeholder="Your Message" name="message" id="" cols="30" rows="8" class="text-white my-2 rounded-lg px-4"></textarea>
+            </div>
+            <div class="flex justify-center items-center">
+                <button onclick="submit" id="submit" class="hover:bg-white hover:text-black border border-white rounded-lg w-72 mx-6 my-7 h-10 font-bold text-[22px]">Submit</button>
+            </div>
+        </div>
+        <div class="mx-16">
+            <img src="img/contact.jpg" alt="" class="h-80 w-100" >
+        </div>
+    </section>
+    <footer class="text-white flex bg-gray-600  justify-center items-center">
+        <div class="flex mx-14 my-8  justify-center">
+            <div class="w-[25%] mx-8">
+                <p class="text-yellow-400">About Us</p>
+                <p>Empowering communities to combat hunger and food insecurity through sustainable initiatives and collaborative partnerships."
+                </p>
+                <p>+91 9142023819</p>
+                <p>rajsahu0702@gmail.com</p>
+            </div>
+    
+            <div class="w-[25%] mx-8">
+                <p class="text-yellow-400">Information</p>
+                <p>Contact Us</p>
+                <p>Privacy and Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="w-[25%] mx-8">
+                <p class="text-yellow-400">Services</p>
+                <a href="ngo.html"><p>For NGO's</p></a>
+                <a href="contributer.html"><p>For Contributors</p></a>
+                
+                <p>Help</p>
+            </div>
+        </div>
+        
+    </footer>
+    <script>
+        
+        function pay(){
+            alert("Payment Successful");
+        }
+        function wellcontact(){
+            alert("We will Get Back to You ASAP..");
+        }
+        function changeInputValue250() {
+    var inputElement = document.getElementById("amt");
+    inputElement.value = "250";
+}
+
+function changeInputValue500() {
+    var inputElement = document.getElementById("amt");
+    inputElement.value = "500";
+}
+
+function changeInputValue750() {
+    var inputElement = document.getElementById("amt");
+    inputElement.value = "750";
+}
+
+function changeInputValue1000() {
+    var inputElement = document.getElementById("amt");
+    inputElement.value = "1000";
+}
+    </script>
+</body>
+</html>
